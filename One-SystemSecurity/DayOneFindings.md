@@ -1,9 +1,8 @@
 # Case Study 1: File-system detection technique against ransomware; ROFBS (System security)
 
-Papers used: [arxiv:2603.16364v1](https://arxiv.org/pdf/2603.16364v1), [arxiv:2504.14162](https://arxiv.org/pdf/2504.14162)
-
-Date: 2026-04-10
-Status: Papers read, (will) recreate implementations in [eX-VFS](https://github.com/Euler-Constant/eX-VFS).
+- Papers used: [arxiv:2603.16364v1](https://arxiv.org/pdf/2603.16364v1), [arxiv:2504.14162](https://arxiv.org/pdf/2504.14162)
+- Date: 2026-04-10
+- Status: Papers read, (will) recreate implementations in [eX-VFS](https://github.com/Euler-Constant/eX-VFS).
 
 ## First impressions:
 While neck-deep in my personal (though incomplete) implementation of a Virtual File System (VFS), I ended up thinking a lot about threat vectors through the VFS itself. Surely enough, my suspicions ended up being correct; whatever protocol can encrypt files across board ends up being game over anyway if you're not faster than the attacker. So I scoured the internet, and found ROFBS and its asynchronous variant.
