@@ -41,3 +41,7 @@ The IR is first flattened to three-address form, then classical optimisations ar
 - Scalar renaming
 
 After this phase, which includes one or a few of the above (which is not an exhaustive list), it is in its cleanest state.
+
+### Identifying Memory Adjacent References
+
+From here I began to have problems with how I viewed the algorithm, aand it's quite simple, actually. This point begins the packing algorithm, forming PackSets. Basically, a PackSet is a set of packs, and a pack is an n-tuple where thee values are independent isomorphic statements in a basic block. The core of this step involves scanning each basic block to find pairs of independent statements, and checks for isomorphism, independence, position consistency and alignment consistency.
